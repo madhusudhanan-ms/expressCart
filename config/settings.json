@@ -2,7 +2,7 @@
     "cartTitle": "CLOTH",
     "cartDescription": "expressCart",
     "cartLogo": "",
-    "baseUrl": "http://localhost:1111",
+    "baseUrl": "http://APP_IP:1111",
     "emailHost": "smtp-mail.outlook.com",
     "emailPort": 587,
     "emailSecure": false,

@@ -1,6 +1,6 @@
 {
     "products":[
-        {
+        {   "_id": "1",
             "productPermalink": "duckworth-jacket",
             "productTitle": "Duckworth Woolfill Jacket",
             "productPrice": "188.00",
@@ -11,7 +11,7 @@
             "productImage": "/uploads/duckworth-jacket/woolfill-jacket_6c39ae23-c0c8-4821-85f4-4b5d64333c62_grande.jpg",
             "productStock": 10
         },
-        {
+        {   "_id": "2",
             "productPermalink": "5-panel-camp-cap",
             "productTitle": "5 Panel Camp Cap",
             "productPrice": "48",
@@ -22,7 +22,7 @@
             "productImage": "/uploads/5-panel-cap/5-panel-hat_4ee20a27-8d5a-490e-a2fc-1f9c3beb7bf5_grande.jpg",
             "productStock": 10
         },
-        {
+        {   "_id": "3",
             "productPermalink": "ranger-boot",
             "productTitle": "Red Wing Iron Ranger Boot",
             "productPrice": "310",
@@ -33,7 +33,7 @@
             "productOptions": "{\"size\":{\"optName\":\"size\",\"optLabel\":\"Select size\",\"optType\":\"select\",\"optOptions\":[\"7.5\",\"8\",\"8.5\",\"9\",\"9.5\",\"10\",\"10.5\",\"11\"]}}",
             "productStock": 10
         },
-        {
+        {   "_id": "4",
             "productPermalink": "whitney-pullover",
             "productTitle": "Whitney pullover",
             "productPrice": "138",
@@ -44,7 +44,7 @@
             "productOptions": "{\"size\":{\"optName\":\"size\",\"optLabel\":\"Select size\",\"optType\":\"select\",\"optOptions\":[\"S\",\"M\",\"L\",\"XL\"]}}", 
             "productStock": 10
         },
-        {
+        {   "_id": "5",
             "productPermalink": "scout-backpack",
             "productTitle": "Scout Backpack",
             "productPrice": "128.00",
@@ -55,7 +55,7 @@
             "productOptions": "{\"colour\":{\"optName\":\"colour\",\"optLabel\":\"Select colour\",\"optType\":\"select\",\"optOptions\":[\"Navy\",\"Moss\",\"Nutmeg\",\"Khaki\"]}}",
             "productStock": 10
         },
-        {
+        {   "_id": "6",
             "productPermalink" : "hudderton-backpack",
             "productTitle" : "Hudderton Backpack",
             "productPrice" : "49.95",
@@ -66,7 +66,7 @@
             "productImage" : "/uploads/hudderton-backpack/hudderton-backpack_dc8afb13-448b-49d9-a042-5a163a97de8f_590x.jpg",
             "productStock": 10
         },
-        {
+        {   "_id": "7",
             "productPermalink" : "ayres-chambray",
             "productTitle" : "Ayres Chambray",
             "productPrice" : "77",

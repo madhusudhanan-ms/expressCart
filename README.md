@@ -16,7 +16,7 @@
 3. Enter folder: `cd expressCart`
 4. Install dependencies: `npm install`
 5. Start application: `npm start --production`
-6. Visit [http://127.0.0.1:1111](http://127.0.0.1:1111) in your browser
+6. Visit [http://127.0.0.1:8080](http://127.0.0.1:8080) in your browser
 
 Keeping expressCart running after closing the terminal can be done in a few ways but we recommend using the `PM2` package. To set this up:
 
@@ -35,7 +35,7 @@ The easiest way to get up and running is using Docker. Once the Docker CLI is in
 1. Enter the root of the expressCart application
 2. Change `/config/settings.json` - `"databaseConnectionString": "mongodb://mongodb:27017/expresscart"`
 3. Run: `docker-compose up --build`
-4. Visit [http://127.0.0.1:1111](http://127.0.0.1:1111) in your browser
+4. Visit [http://127.0.0.1:8080](http://127.0.0.1:8080) in your browser
 
 ### Deploy on Heroku
 
@@ -59,7 +59,7 @@ Example use might be to send all orders to a Google Docs spreadsheet or an accou
 
 ## Admin
 
-Visit: [http://127.0.0.1:1111/admin](http://127.0.0.1:1111/admin)
+Visit: [http://127.0.0.1:8080/admin](http://127.0.0.1:8080/admin)
 
 A new user form will be shown where a user can be created.
 
@@ -136,7 +136,7 @@ Note: The `databaseConnectionString` property requires a full connection string.
 
 ## Configuration
 
-Settings can be managed from the admin panel ([http://127.0.0.1:1111/admin](http://127.0.0.1:1111/admin)) with the exception of the Payment gateway and database settings.
+Settings can be managed from the admin panel ([http://127.0.0.1:8080/admin](http://127.0.0.1:8080/admin)) with the exception of the Payment gateway and database settings.
 
 All settings are stored in json files in the `/config` directory. The main application-level settings are stored in `/config/settings.json` while payment gateway settings are stored in files in the `/config` directory named after the payment gateway. For example, configuration for the Stripe payment gateway is stored in `/config/stripe.json`.
 
@@ -234,7 +234,7 @@ The Stripe config file is located: `/config/stripe.json`. A example Stripe setti
     "publicKey": "pk_test_this_is_not_real",
     "stripeCurrency": "usd", The Stripe currency to charge in
     "stripeDescription": "expressCart payment", // Shows as the Stripe description
-    "stripeLogoURL": "http://localhost:1111/images/stripelogo.png" // URL to the logo to display on Stripe form
+    "stripeLogoURL": "http://localhost:8080/images/stripelogo.png" // URL to the logo to display on Stripe form
 }
 ```
 

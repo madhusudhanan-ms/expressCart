@@ -1,3 +1,11 @@
+const enabled_stacktrace = true
+const APM_SERVER_IP = localhost
+if (enabled_stacktrace == true){
+    var apm = require('elastic-apm-node').start({
+    serviceName: 'expressCart',
+    serverUrl: 'http://APM_SERVER_IP:8200',
+    })
+}
 const express = require('express');
 const path = require('path');
 const logger = require('morgan');

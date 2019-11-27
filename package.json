@@ -49,6 +49,7 @@
     "sitemap": "^1.6.0",
     "strip-bom": "^3.0.0",
     "stripe": "^5.10.0",
+    "swagger-stats": "^0.95.11",
     "uglifycss": "0.0.27"
   },
   "devDependencies": {

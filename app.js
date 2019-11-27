@@ -79,6 +79,15 @@ const authorizenet = require('./routes/payments/authorizenet');
 
 const app = express();
 
+const swStats = require('swagger-stats');
+app.use(swStats.getMiddleware({
+      timelineBucketDuration: 60000,
+      durationBuckets: [50, 100, 200, 500, 1000, 5000],
+      requestSizeBuckets: [5, 10, 25, 50, 100, 250, 500, 1000, 2500, 5000, 10000],
+      responseSizeBuckets: [5, 10, 25, 50, 100, 250, 500, 1000, 2500, 5000, 10000],
+      apdexThreshold: 50,
+    }));
+
 // view engine setup
 app.set('views', path.join(__dirname, '/views'));
 app.engine('hbs', handlebars({

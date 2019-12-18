@@ -24,4 +24,6 @@
     "databaseConnectionString": "mongodb://MANGODB_IP:27017/expresscart?authSource=admin",
     "theme": "Cloth",
     "trackStock": false
+    "tagAppName": "TAG_APP_NAME"
+    "tagProjectName": "TAG_PROJECT_NAME"    
 }

@@ -292,6 +292,11 @@ app.use((req, res, next) => {
 // Ran on all routes
 app.use((req, res, next) => {
     res.setHeader('Cache-Control', 'no-cache, no-store');
+    if (enabled_stacktrace == true){
+        apm.setLabel("_tag_appName", config.tagAppName);
+        apm.setLabel("_tag_projectName", config.tagProjectName);
+        apm.setLabel("_tag_name", "expresscart");
+    }
     next();
 });
 

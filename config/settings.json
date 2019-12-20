@@ -25,5 +25,6 @@
     "theme": "Cloth",
     "trackStock": false,
     "tagAppName": "TAG_APP_NAME",
-    "tagProjectName": "TAG_PROJECT_NAME"    
+    "tagProjectName": "TAG_PROJECT_NAME",
+    "tagName": "TAG_NAME"
 }

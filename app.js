@@ -295,7 +295,7 @@ app.use((req, res, next) => {
     if (enabled_stacktrace == true){
         apm.setLabel("_tag_appName", config.tagAppName);
         apm.setLabel("_tag_projectName", config.tagProjectName);
-        apm.setLabel("_tag_name", "expresscart");
+        apm.setLabel("_tag_name", config.tagName);
     }
     next();
 });

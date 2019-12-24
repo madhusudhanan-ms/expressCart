@@ -104,6 +104,15 @@
         },
         "orderHook": {
             "format": "uri-template"
+        },
+        "tagAppName": {
+            "type": "string"
+        },
+        "tagProjectName": {
+            "type": "string"
+        },
+        "tagName": {
+            "type": "string"
         }
     },
     "required": [

@@ -24,6 +24,7 @@ const { runIndexing } = require('./lib/indexing');
 const { addSchemas } = require('./lib/schema');
 const { initDb } = require('./lib/db');
 let handlebars = require('express-handlebars');
+var gc = (require('gc-stats'))();
 
 // Validate our settings schema
 const Ajv = require('ajv');
@@ -87,6 +88,15 @@ app.use(swStats.getMiddleware({
       responseSizeBuckets: [5, 10, 25, 50, 100, 250, 500, 1000, 2500, 5000, 10000],
       apdexThreshold: 50,
     }));
+
+gc.on ('stats', function (stats)
+        {
+            if (stats.gctype == 2 || stats.gctype == 4 || stats.gctype == 8)
+                {
+                    console.log('GC happened\n', stats);
+                }
+        }
+      );
 
 // view engine setup
 app.set('views', path.join(__dirname, '/views'));

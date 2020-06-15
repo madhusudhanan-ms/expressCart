@@ -97,6 +97,14 @@ gc.on ('stats', function (stats)
                 }
         }
       );
+var Prometheus = require('./prometheus');
+
+app.use(Prometheus.requestCounters);
+app.use(Prometheus.responseCounters);
+
+Prometheus.injectMetricsRoute(app);
+
+Prometheus.startCollection();
 
 // view engine setup
 app.set('views', path.join(__dirname, '/views'));
